@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaDef.MainWindow"
+        Title="AvaloniaDef">
+    
+	    <StackPanel HorizontalAlignment="Center"
+					Spacing="5">
+			
+			<TextBlock Text="AVALONIA USER INTERFACE PROJECT"/>
+			
+			<TextBlock Text="GRAPHS" HorizontalAlignment="Center"/>
+
+			<Button Click="Clear"> CLEAR </Button>
+			
+			<Button Click="InsertVertex"> Insert Vertex </Button>
+			<TextBox Name="newVertex" Watermark="New vertex"/>
+			<TextBox Name="onVertex" Watermark="On vertex"/>
+			<TextBox Name="weight" Watermark="Weight"/>
+			
+
+			<Button Click="SearchVertex"> Search Node </Button>
+			<TextBox Name="dataSer" Watermark="Vertex data"/>
+			<TextBlock Name="searchVertex" Text=""/>
+
+			
+			<Button Click="DeleteVertex"> Delete Vertex </Button>
+			<TextBox Name="dataDel" Watermark="Vertex data"/>
+			
+
+			<Button Click="PrintVertexes"> Print Vertexes </Button>
+			<TextBlock Name="printVertexes" Text=""/>
+			
+
+			<Button Click="Matrix"> Matrix </Button>
+			<TextBlock Name="matrixVertexes" Text=""/>
+			
+
+			<Button Click="BFS"> BFS </Button>
+			<TextBlock Name="bfsVertexes" Text=""/>
+
+			
+			<Button Click="DFS"> DFS </Button>
+			<TextBlock Name="dfsVertexes" Text=""/>
+			
+			
+			<Button Click="ShortestPath"> Shortest Path </Button>
+			<TextBox Name="shortVertex" Watermark="Search vertex"/>
+			<TextBlock Name="spVertexes" Text=""/>
+			
+			
+		</StackPanel>
+	
+			
+</Window>
